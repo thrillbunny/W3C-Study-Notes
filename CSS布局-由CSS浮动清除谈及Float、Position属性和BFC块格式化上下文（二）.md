@@ -23,7 +23,7 @@ clear 属性规定元素的哪一侧不允许有其他浮动元素，属性值�
 
 此时可得：
 
-![clearleft]("pictures/CSS清除浮动/clearleft.PNG")
+![clearleft](pictures/CSS清除浮动/clearleft.PNG)
 
 clear 禁止了第二个 box 左侧有浮动元素。
 
@@ -38,11 +38,11 @@ clear 禁止了第二个 box 左侧有浮动元素。
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-			<div style="clear:both;"></div> <!--新增代码-->
+	    <div style="clear:both;"></div> <!--新增代码-->
         </div>
     </div>
 
-![空div]("pictures/CSS清除浮动/空div.PNG")
+![空div](pictures/CSS清除浮动/空div.PNG)
 
 ### 2.2 CSS 伪元素
 
@@ -57,7 +57,7 @@ clear 禁止了第二个 box 左侧有浮动元素。
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-			<div style="clear:both;"></div> <!--新增代码-->
+	    <div style="clear:both;"></div> <!--新增代码-->
         </div>
     </div>
 
@@ -129,7 +129,7 @@ clear 禁止了第二个 box 左侧有浮动元素。
         </div>
     </div>
 
-![BFC清除浮动]("pictures/CSS清除浮动/BFC清除浮动.PNG")
+![BFC清除浮动](pictures/CSS清除浮动/BFC清除浮动.PNG)
 
 ### 3.4 BFC 其他注意点
 
