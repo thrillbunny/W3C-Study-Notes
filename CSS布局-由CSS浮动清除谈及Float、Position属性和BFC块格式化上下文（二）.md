@@ -23,7 +23,7 @@ clear 属性规定元素的哪一侧不允许有其他浮动元素，属性值�
 
 此时可得：
 
-![clearleft]("pictures/CSS清除浮动/clearleft.PNG")
+![clearleft](pictures/CSS清除浮动/clearleft.PNG)
 
 clear 禁止了第二个 box 左侧有浮动元素。
 
@@ -38,11 +38,11 @@ clear 禁止了第二个 box 左侧有浮动元素。
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-			<div style="clear:both;"></div> <!--新增代码-->
+	    <div style="clear:both;"></div> <!--新增代码-->
         </div>
     </div>
 
-![空div]("pictures/CSS清除浮动/空div.PNG")
+![空div](pictures/CSS清除浮动/空div.PNG)
 
 ### 2.2 CSS 伪元素
 
@@ -57,7 +57,7 @@ clear 禁止了第二个 box 左侧有浮动元素。
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
-			<div style="clear:both;"></div> <!--新增代码-->
+	    <div style="clear:both;"></div> <!--新增代码-->
         </div>
     </div>
 
@@ -129,7 +129,7 @@ clear 禁止了第二个 box 左侧有浮动元素。
         </div>
     </div>
 
-![BFC清除浮动]("pictures/CSS清除浮动/BFC清除浮动.PNG")
+![BFC清除浮动](pictures/CSS清除浮动/BFC清除浮动.PNG)
 
 ### 3.4 BFC 其他注意点
 
@@ -146,7 +146,7 @@ clear 禁止了第二个 box 左侧有浮动元素。
 一个新的 display 属性的值，它可以创建无副作用的BFC。在父级块中使用 display: flow-root 可以创建新的BFC。
 
 > flow-root:
-
+>
 > The element generates a block container box, and lays out its contents using flow layout. It always establishes a new block formatting context for its contents. [CSS2]。
 
 主流浏览器 Firefox 53+ 、 Chrome 58+ 和 Opera 45+ 支持 flow-root 属性，可以看出该属性兼容性并不高，实际使用中为了更好对 flow-root 做降级处理，可以通过 CSS 条件属性 @supports() 来做优雅降级处理，应用到本文示例代码：

@@ -5,11 +5,11 @@
 
 本文的起因在于我在重现一道学习网站上的布局时，自己编写的代码得到的导航栏布局结果如下：
 
-<img src="pictures/CSS清除浮动/导航布局错误.jpg" alt="错误导航布局">
+![错误导航布局](pictures/CSS清除浮动/导航布局错误.PNG)
 
 而实际正确的结果如图：
 
-<img src="pictures/CSS清除浮动/导航布局正确.jpg" alt="正确导航布局">
+![正确导航布局](pictures/CSS清除浮动/导航布局正确.PNG)
 
 可以很明显的看出问题所在：底部的 footer 背景蔓延到了主区域。
 
@@ -156,21 +156,21 @@ div {
 
 没有设置绝对定位元素的实际情况：
 
-![初始情况]("pictures/Position/absolute初始.PNG")
+![初始情况](pictures/Position/absolute初始.PNG)
 
 设置 box2 元素为绝对定位，对比设置不同父元素的情况：
 
 1.不设置父元素
 
-![不设置父元素]("pictures/Position/没有设置父.PNG")
+![不设置父元素](pictures/Position/没有设置父.PNG)
 
 2.设置 box1 为父元素
 
-![设置 box1 为父元素]("pictures/Position/设置box1为父.PNG")
+![设置 box1 为父元素](pictures/Position/设置box1为父.PNG)
 
 3.设置 box2 为父元素
 
-![设置 box2 为父元素]("pictures/Position/设置box2为父.PNG")
+![设置 box2 为父元素](pictures/Position/设置box2为父.PNG)
 
 本文的用例设置了每个盒子的宽高，而参考文档 [对CSS中的Position、Float属性的一些深入探讨](http://www.cnblogs.com/coffeedeveloper/p/3145790.html#html) 中提出了更多情况，得到了下面的结论：
 
@@ -186,7 +186,7 @@ div {
 
 针对第 2 点，本文进行了尝试，去除了 top 和 left 设置，得到结果：
 
-![不设置top和left]("pictures/Position/不设置top和left.PNG")
+![不设置top和left](pictures/Position/不设置top和left.PNG)
 
 也就是相对定位元素不会根据父元素进行定位，而是位于其默认位置。
 
@@ -410,7 +410,7 @@ orange 框遮住了后面两个框的一部分，这是因为 float 元素虽然
 
 实际的结果是这样的：
 
-![父元素塌陷]("pictures/CSS清除浮动/父元素塌陷.PNG")
+![父元素塌陷](pictures/CSS清除浮动/父元素塌陷.PNG)
 
 但我们希望看到的是有橙色边框包围三个盒子，这就是因为父容器并没有把浮动的子元素包围起来，父子间的 margin 和 padding 设置值不能正确被显示，俗称塌陷。
 
